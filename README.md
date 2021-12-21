@@ -31,7 +31,21 @@ $ zip -F TARGET_ZIP_FILE.zip --out NEW_NAME_FOR_JOINED_ZIP.zip
 
 
 # Zip for Python
-## ...
+
+## extract files from zip archive and choose destination (python)
+Note: zipfile should be available in vanilla python without needing to add it (e.g. no pip install needed)
+
 ```
-...
+from zipfile import ZipFile 
+  
+# name path of zip archive
+archive_file_path = "YOUR_ZIP_NAME.zip"
+destination_file_path = "YOUR_DESTINATION_PATH"
+  
+# open zip archive (read mode)
+with ZipFile(archive_file_path, 'r') as zip: 
+
+    # extract files to destination_file_path
+    zip.extractall( destination_file_path )
+
 ```
