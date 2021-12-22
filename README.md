@@ -2,6 +2,10 @@
 
 # Zip for Linux
 
+```
+zip NAME_OF_ZIP_FILE_YOU_MAKE.zip NAME_OF_FILE_YOU_ZIP
+```
+
 ## To recursively zip a directory, from the parent directory of the target folder/directory:
 
 ```
