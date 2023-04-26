@@ -53,3 +53,15 @@ with ZipFile(archive_file_path, 'r') as zip:
     zip.extractall( destination_file_path )
 
 ```
+
+
+## zip whole directory(folder) into a zip file (or tar)
+
+```
+target_directory_file_path = "NAME_OF_TARGET_DIRECTORY"
+new_zip_file_name = "YOUR_ZIP_NAME.zip"
+
+import shutil
+shutil.make_archive(new_zip_file_name, 'zip', target_directory_file_path)
+```
+
