@@ -65,3 +65,15 @@ import shutil
 shutil.make_archive(new_zip_file_name, 'zip', target_directory_file_path)
 ```
 
+## To create multiple small zip files of one original (e.g large media) file.
+
+1. zip the file, calling the zip archive e.g. 'large_file.zip'
+2. split into parts named 'small_part'
+```bash
+$ split -b 100M large_file.zip small_part
+```
+3. re-combine the parts
+```bash
+$ cat small_part* > reassembled_large_file.zip
+```
+4. unzip the full file to obtain the original file
