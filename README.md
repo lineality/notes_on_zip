@@ -78,4 +78,13 @@ $ cat small_part* > reassembled_large_file.zip
 ```
 4. unzip the full file to obtain the original file
 
+## To create a password protected zip archive (of a file or another zip archive)
+
+1. assuming you are password protecting an archive: calling the zip archive e.g. 'myfile.zip'
+```bash
+zip -P mypassword mypwdprotectedarchive.zip myfile.zip
+```
+
+
+
 
