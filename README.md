@@ -82,7 +82,7 @@ $ cat small_part* > reassembled_large_file.zip
 
 1. assuming you are password protecting an archive: calling the zip archive e.g. 'myfile.zip'
 ```bash
-zip -P mypassword mypwdprotectedarchive.zip myfile.zip
+zip -P PASSWORDHERE mypwdprotectedarchive.zip myfile.zip
 ```
 
 
